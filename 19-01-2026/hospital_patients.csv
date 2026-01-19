@@ -1,0 +1,401 @@
+patient_id,age,gender,diagnosis,hospital_days,treatment_cost
+1,59,Female,Fracture,13,26344.00
+2,86,Male,Chronic Disease,29,65602.00
+3,4,Female,Infection,29,800.00
+4,2,Female,Flu,5,57059.00
+5,92,Female,Chronic Disease,4,19302.00
+6,47,Male,Chronic Disease,5,63684.00
+7,43,Male,Infection,10,61762.00
+8,89,Male,Flu,10,7907.00
+9,83,Male,Fracture,8,20849.00
+10,14,Female,Fracture,22,75913.00
+11,68,Male,Flu,1,76246.00
+12,9,Male,Surgery,11,66962.00
+13,80,Male,Infection,28,78795.00
+14,67,Female,Infection,3,43334.00
+15,49,Female,Surgery,1,4622.00
+16,47,Female,Infection,1,82184.00
+17,49,Female,Surgery,2,52829.00
+18,58,Male,Flu,6,53849.00
+19,34,Female,Fracture,9,22897.00
+20,61,Male,Fracture,8,800.00
+21,95,Female,Fracture,22,97152.00
+22,71,Female,Flu,6,11659.00
+23,91,Female,Flu,29,35624.00
+24,79,Male,Infection,20,33718.00
+25,84,Female,Flu,1,43966.00
+26,44,Female,Chronic Disease,9,70385.00
+27,60,Male,Infection,27,44352.00
+28,58,Female,Flu,6,17879.00
+29,86,Male,Chronic Disease,21,1871.00
+30,79,Male,Chronic Disease,21,36610.00
+31,44,Female,Infection,1,6474.00
+32,68,Female,Flu,6,26898.00
+33,94,Male,Flu,5,60794.00
+34,84,Male,Infection,9,5815.00
+35,47,Male,Fracture,8,37259.00
+36,87,Male,Fracture,3,82727.00
+37,77,Male,Fracture,11,77169.00
+38,93,Female,Flu,12,42250.00
+39,81,Female,Chronic Disease,10,99981.00
+40,99,Male,Infection,3,97435.00
+41,23,Female,Flu,15,13822.00
+42,69,Female,Fracture,2,7531.00
+43,71,Female,Surgery,9,8217.00
+44,24,Female,Infection,15,22172.00
+45,79,Female,Surgery,10,91517.00
+46,56,Male,Chronic Disease,23,36055.00
+47,41,Female,Chronic Disease,20,71857.00
+48,56,Male,Chronic Disease,2,61914.00
+49,79,Male,Infection,17,6430.00
+50,38,Male,Flu,15,94523.00
+51,23,Female,Flu,15,96773.00
+52,12,Male,Fracture,29,43107.00
+53,78,Female,Infection,8,52336.00
+54,75,Female,Flu,21,78868.00
+55,63,Male,Infection,20,66537.00
+56,16,Female,Fracture,3,28129.00
+57,24,Male,Infection,20,83433.00
+58,56,Female,Surgery,1,74668.00
+59,78,Female,Flu,2,81126.00
+60,63,Female,Flu,17,94014.00
+61,46,Male,Flu,4,82119.00
+62,59,Female,Infection,7,44310.00
+63,33,Female,Surgery,15,25885.00
+64,59,Male,Chronic Disease,1,22741.00
+65,64,Female,Fracture,3,47820.00
+66,80,Female,Surgery,26,8241.00
+67,1,Male,Infection,21,1778.00
+68,53,Female,Chronic Disease,20,73687.00
+69,63,Female,Infection,22,96132.00
+70,16,Male,Infection,2,69981.00
+71,65,Female,Infection,18,2934.00
+72,21,Male,Chronic Disease,17,47199.00
+73,3,Female,Surgery,8,20026.00
+74,59,Male,Chronic Disease,10,53049.00
+75,58,Female,Fracture,12,92255.00
+76,2,Female,Fracture,26,27627.00
+77,14,Female,Flu,13,77395.00
+78,97,Female,Flu,1,93576.00
+79,56,Male,Chronic Disease,21,43172.00
+80,55,Male,Flu,23,17052.00
+81,10,Female,Infection,3,65006.00
+82,19,Female,Chronic Disease,9,93846.00
+83,5,Female,Flu,17,85253.00
+84,21,Female,Infection,17,80692.00
+85,63,Female,Infection,23,22561.00
+86,7,Female,Chronic Disease,1,19889.00
+87,78,Female,Flu,13,11811.00
+88,16,Female,Chronic Disease,17,19359.00
+89,7,Female,Infection,5,77206.00
+90,85,Male,Fracture,13,43895.00
+91,70,Male,Surgery,19,74208.00
+92,45,Female,Infection,8,49183.00
+93,53,Male,Infection,22,19118.00
+94,64,Female,Infection,30,79791.00
+95,52,Male,Chronic Disease,7,48210.00
+96,20,Male,Surgery,26,96243.00
+97,100,Male,Chronic Disease,2,76700.00
+98,6,Female,Chronic Disease,20,55338.00
+99,29,Female,Flu,14,34430.00
+100,4,Female,Flu,3,17174.00
+101,2,Female,Fracture,23,5655.00
+102,93,Male,Flu,12,17038.00
+103,67,Female,Surgery,16,65114.00
+104,70,Female,Chronic Disease,13,2957.00
+105,25,Female,Infection,25,45027.00
+106,33,Female,Infection,19,94774.00
+107,48,Male,Fracture,25,59732.00
+108,24,Male,Fracture,12,1251.00
+109,44,Male,Flu,5,73907.00
+110,44,Male,Surgery,21,28890.00
+111,21,Male,Chronic Disease,4,82330.00
+112,63,Male,Infection,2,57605.00
+113,33,Male,Chronic Disease,27,49983.00
+114,17,Female,Infection,18,83018.00
+115,69,Female,Chronic Disease,18,84625.00
+116,39,Female,Fracture,12,60802.00
+117,27,Female,Surgery,2,45640.00
+118,100,Female,Chronic Disease,11,18233.00
+119,86,Female,Flu,22,55241.00
+120,53,Female,Surgery,25,48717.00
+121,12,Male,Fracture,6,49273.00
+122,75,Female,Surgery,2,9910.00
+123,56,Male,Fracture,14,48894.00
+124,66,Male,Infection,7,24831.00
+125,75,Male,Surgery,2,87466.00
+126,40,Female,Fracture,9,22986.00
+127,38,Female,Infection,4,64320.00
+128,70,Female,Chronic Disease,24,62495.00
+129,69,Male,Infection,13,38203.00
+130,19,Female,Surgery,26,81451.00
+131,14,Female,Infection,26,15027.00
+132,72,Female,Fracture,21,5821.00
+133,69,Male,Chronic Disease,28,46491.00
+134,44,Male,Surgery,13,90203.00
+135,62,Female,Infection,11,63952.00
+136,66,Male,Surgery,22,22930.00
+137,71,Female,Infection,16,67430.00
+138,7,Male,Chronic Disease,14,95434.00
+139,83,Female,Fracture,2,75948.00
+140,9,Male,Chronic Disease,30,82152.00
+141,34,Female,Flu,22,52872.00
+142,37,Male,Flu,1,33068.00
+143,5,Female,Surgery,18,4188.00
+144,72,Female,Infection,10,48125.00
+145,45,Female,Flu,2,9051.00
+146,49,Male,Infection,16,34623.00
+147,68,Male,Surgery,19,26809.00
+148,50,Male,Chronic Disease,23,28041.00
+149,26,Male,Infection,1,63652.00
+150,6,Male,Surgery,6,20817.00
+151,96,Male,Infection,9,22842.00
+152,61,Female,Flu,11,7622.00
+153,85,Female,Flu,12,77425.00
+154,47,Male,Flu,1,97612.00
+155,6,Female,Infection,14,52540.00
+156,1,Female,Fracture,13,99520.00
+157,68,Female,Infection,19,48758.00
+158,54,Male,Infection,17,81503.00
+159,19,Female,Surgery,2,72518.00
+160,44,Male,Chronic Disease,16,29291.00
+161,95,Female,Fracture,4,70043.00
+162,23,Male,Fracture,6,8461.00
+163,21,Female,Surgery,1,88227.00
+164,74,Female,Surgery,15,89372.00
+165,34,Male,Surgery,16,46115.00
+166,64,Female,Fracture,29,66308.00
+167,77,Male,Surgery,12,92199.00
+168,71,Male,Chronic Disease,3,10204.00
+169,95,Male,Infection,24,17338.00
+170,1,Female,Flu,27,31792.00
+171,36,Male,Surgery,21,27780.00
+172,28,Female,Infection,7,44301.00
+173,10,Male,Fracture,1,51610.00
+174,9,Male,Surgery,20,5486.00
+175,75,Female,Flu,12,21389.00
+176,4,Female,Fracture,13,73607.00
+177,66,Male,Fracture,19,45370.00
+178,34,Female,Surgery,29,85962.00
+179,69,Female,Fracture,18,17011.00
+180,62,Male,Surgery,28,20958.00
+181,80,Female,Infection,2,89841.00
+182,37,Male,Flu,24,64078.00
+183,31,Male,Chronic Disease,20,97335.00
+184,53,Male,Chronic Disease,27,30450.00
+185,72,Male,Chronic Disease,29,16938.00
+186,82,Female,Chronic Disease,23,32328.00
+187,81,Male,Chronic Disease,13,80390.00
+188,33,Female,Fracture,8,22188.00
+189,48,Female,Fracture,23,99315.00
+190,75,Male,Infection,28,55751.00
+191,100,Female,Surgery,20,36281.00
+192,95,Male,Infection,18,24529.00
+193,90,Female,Infection,28,53701.00
+194,82,Male,Flu,24,50633.00
+195,72,Female,Chronic Disease,14,74648.00
+196,89,Female,Flu,12,49147.00
+197,62,Female,Surgery,25,53362.00
+198,91,Female,Infection,12,7704.00
+199,36,Male,Infection,17,33691.00
+200,53,Male,Chronic Disease,8,24398.00
+201,55,Female,Surgery,7,75514.00
+202,80,Male,Chronic Disease,29,50646.00
+203,9,Male,Surgery,18,64464.00
+204,13,Male,Surgery,15,78246.00
+205,10,Female,Flu,11,93937.00
+206,34,Male,Surgery,11,87310.00
+207,26,Female,Chronic Disease,18,72436.00
+208,4,Male,Surgery,17,30746.00
+209,84,Female,Surgery,2,93281.00
+210,74,Female,Chronic Disease,28,97764.00
+211,32,Male,Flu,10,8959.00
+212,8,Male,Chronic Disease,12,19383.00
+213,56,Male,Fracture,14,88443.00
+214,91,Female,Fracture,17,81584.00
+215,1,Male,Surgery,5,7982.00
+216,65,Female,Infection,9,20077.00
+217,57,Female,Chronic Disease,10,51804.00
+218,19,Female,Flu,28,65389.00
+219,63,Male,Fracture,20,55542.00
+220,42,Female,Flu,27,7637.00
+221,41,Female,Fracture,6,28856.00
+222,58,Female,Chronic Disease,5,7422.00
+223,72,Female,Fracture,8,80280.00
+224,23,Female,Flu,10,14331.00
+225,68,Male,Fracture,19,14051.00
+226,47,Female,Flu,29,81071.00
+227,74,Female,Flu,19,62154.00
+228,27,Female,Flu,16,72978.00
+229,45,Female,Fracture,8,97886.00
+230,34,Male,Flu,9,3734.00
+231,87,Male,Fracture,8,89489.00
+232,97,Male,Fracture,4,80149.00
+233,94,Female,Fracture,3,32099.00
+234,4,Female,Flu,28,98802.00
+235,72,Female,Fracture,17,67681.00
+236,40,Male,Fracture,3,88098.00
+237,45,Male,Surgery,23,87205.00
+238,53,Male,Infection,16,24003.00
+239,96,Male,Surgery,13,47966.00
+240,32,Female,Surgery,19,2730.00
+241,14,Female,Flu,29,80263.00
+242,33,Male,Surgery,4,68236.00
+243,36,Female,Fracture,23,8958.00
+244,66,Male,Fracture,23,2175.00
+245,62,Male,Flu,13,84087.00
+246,99,Female,Fracture,5,92419.00
+247,64,Male,Fracture,23,31979.00
+248,4,Male,Flu,2,58900.00
+249,50,Male,Surgery,3,71060.00
+250,83,Male,Infection,24,80136.00
+251,54,Female,Chronic Disease,4,25016.00
+252,36,Male,Infection,11,83683.00
+253,45,Male,Flu,2,44061.00
+254,83,Male,Surgery,22,58389.00
+255,98,Male,Flu,23,96445.00
+256,42,Female,Flu,11,9124.00
+257,3,Male,Infection,10,46488.00
+258,49,Female,Chronic Disease,17,50452.00
+259,21,Male,Fracture,4,8679.00
+260,85,Male,Fracture,20,41368.00
+261,43,Female,Flu,21,32330.00
+262,34,Female,Fracture,12,52913.00
+263,34,Female,Flu,20,58232.00
+264,85,Female,Infection,19,15977.00
+265,81,Male,Surgery,30,98578.00
+266,4,Male,Chronic Disease,20,20723.00
+267,87,Male,Chronic Disease,5,1072.00
+268,5,Female,Chronic Disease,11,24827.00
+269,40,Male,Chronic Disease,16,39085.00
+270,25,Female,Chronic Disease,6,65026.00
+271,62,Female,Fracture,18,86004.00
+272,25,Male,Infection,22,30384.00
+273,50,Male,Flu,24,23276.00
+274,7,Female,Surgery,22,45032.00
+275,80,Male,Flu,7,21477.00
+276,95,Female,Fracture,15,89978.00
+277,90,Female,Flu,27,14023.00
+278,98,Male,Surgery,2,69515.00
+279,96,Male,Chronic Disease,25,47123.00
+280,92,Male,Infection,15,63770.00
+281,29,Male,Fracture,6,80143.00
+282,33,Female,Surgery,19,80611.00
+283,32,Female,Surgery,25,81640.00
+284,78,Female,Infection,17,63694.00
+285,38,Female,Surgery,1,97084.00
+286,48,Male,Infection,30,99113.00
+287,86,Male,Infection,28,40662.00
+288,62,Male,Fracture,10,80407.00
+289,36,Female,Infection,1,15783.00
+290,28,Male,Surgery,1,5847.00
+291,87,Female,Chronic Disease,29,16963.00
+292,71,Female,Fracture,13,50013.00
+293,67,Male,Fracture,17,2487.00
+294,46,Male,Flu,29,2921.00
+295,61,Male,Chronic Disease,4,38950.00
+296,84,Female,Flu,25,12541.00
+297,9,Female,Surgery,11,99708.00
+298,20,Female,Flu,4,25853.00
+299,60,Female,Fracture,8,22481.00
+300,77,Male,Infection,4,14717.00
+301,92,Female,Flu,18,26579.00
+302,82,Female,Infection,26,27194.00
+303,64,Female,Infection,20,82902.00
+304,36,Male,Flu,10,95880.00
+305,68,Female,Infection,17,52867.00
+306,13,Female,Fracture,12,8805.00
+307,43,Female,Chronic Disease,14,55126.00
+308,64,Male,Flu,19,38485.00
+309,68,Male,Infection,12,26625.00
+310,39,Female,Fracture,4,39033.00
+311,62,Female,Surgery,24,13462.00
+312,10,Male,Flu,23,44165.00
+313,92,Female,Chronic Disease,3,37963.00
+314,53,Male,Surgery,16,57890.00
+315,86,Female,Surgery,4,49514.00
+316,91,Male,Surgery,13,61104.00
+317,62,Male,Chronic Disease,28,71046.00
+318,87,Male,Infection,3,14079.00
+319,97,Male,Flu,17,65740.00
+320,40,Female,Flu,1,29601.00
+321,95,Male,Chronic Disease,13,62485.00
+322,77,Female,Flu,29,20390.00
+323,8,Male,Chronic Disease,2,57817.00
+324,10,Male,Chronic Disease,16,78057.00
+325,85,Male,Fracture,23,16358.00
+326,29,Male,Surgery,22,99280.00
+327,81,Male,Fracture,29,60773.00
+328,24,Male,Flu,11,73293.00
+329,21,Female,Surgery,26,31337.00
+330,45,Male,Fracture,17,21621.00
+331,74,Female,Surgery,20,997.00
+332,84,Male,Surgery,29,44049.00
+333,23,Female,Chronic Disease,5,907.00
+334,2,Male,Surgery,19,80880.00
+335,2,Female,Chronic Disease,24,16504.00
+336,83,Male,Fracture,27,36980.00
+337,97,Female,Chronic Disease,7,94071.00
+338,10,Male,Chronic Disease,23,46348.00
+339,40,Male,Infection,8,53906.00
+340,67,Male,Flu,12,7484.00
+341,78,Female,Fracture,24,90850.00
+342,13,Male,Surgery,8,86662.00
+343,39,Male,Chronic Disease,28,40478.00
+344,38,Female,Infection,9,8262.00
+345,32,Female,Flu,27,75771.00
+346,46,Female,Flu,14,74224.00
+347,24,Female,Fracture,29,38889.00
+348,70,Male,Infection,6,58099.00
+349,27,Male,Infection,21,81158.00
+350,62,Male,Chronic Disease,29,39729.00
+351,14,Male,Chronic Disease,19,65489.00
+352,66,Male,Chronic Disease,16,56159.00
+353,29,Female,Chronic Disease,10,99656.00
+354,32,Male,Chronic Disease,11,53601.00
+355,100,Female,Infection,1,1392.00
+356,47,Female,Infection,29,19313.00
+357,14,Female,Fracture,11,70978.00
+358,1,Male,Infection,14,8298.00
+359,94,Male,Surgery,12,4736.00
+360,48,Female,Fracture,9,79148.00
+361,9,Female,Surgery,21,9478.00
+362,41,Male,Fracture,27,89390.00
+363,30,Female,Surgery,18,3025.00
+364,50,Female,Surgery,23,86775.00
+365,13,Female,Chronic Disease,15,30950.00
+366,19,Female,Flu,26,99733.00
+367,3,Male,Infection,6,30085.00
+368,2,Male,Flu,20,59706.00
+369,52,Male,Infection,17,70637.00
+370,7,Male,Chronic Disease,19,94285.00
+371,52,Male,Chronic Disease,26,32036.00
+372,31,Male,Chronic Disease,24,11568.00
+373,14,Female,Chronic Disease,12,98673.00
+374,36,Male,Flu,2,5501.00
+375,8,Female,Infection,7,97852.00
+376,66,Male,Infection,26,61857.00
+377,74,Male,Infection,30,25546.00
+378,31,Female,Infection,6,9748.00
+379,63,Male,Fracture,3,34683.00
+380,19,Male,Flu,9,30495.00
+381,70,Male,Infection,1,51446.00
+382,45,Male,Fracture,13,29631.00
+383,32,Male,Flu,29,35755.00
+384,99,Female,Flu,27,58126.00
+385,78,Female,Flu,26,94789.00
+386,63,Male,Surgery,7,15843.00
+387,82,Male,Flu,11,77324.00
+388,87,Female,Fracture,30,54580.00
+389,90,Male,Infection,20,21237.00
+390,11,Female,Fracture,3,79388.00
+391,42,Female,Fracture,27,53283.00
+392,92,Male,Flu,29,74179.00
+393,89,Female,Chronic Disease,27,90566.00
+394,99,Female,Chronic Disease,26,8107.00
+395,12,Female,Flu,26,83810.00
+396,89,Female,Flu,25,10698.00
+397,4,Female,Flu,7,82363.00
+398,55,Female,Fracture,8,66060.00
+399,65,Male,Chronic Disease,6,26664.00
+400,86,Male,Infection,11,20443.00
