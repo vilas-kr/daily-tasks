@@ -1,0 +1,76 @@
+put: `/ecommerce/raw/olist_order_items_dataset.csv': File exists
+put: `/ecommerce/raw/olist_orders_dataset.csv': File exists
+
+Orders Schema :
+root
+ |-- order_id: string (nullable = true)
+ |-- customer_id: string (nullable = true)
+ |-- order_status: string (nullable = true)
+ |-- order_purchase_timestamp: timestamp (nullable = true)
+ |-- order_approved_at: timestamp (nullable = true)
+ |-- order_delivered_carrier_date: timestamp (nullable = true)
+ |-- order_delivered_customer_date: timestamp (nullable = true)
+ |-- order_estimated_delivery_date: timestamp (nullable = true)
+
+
+Orders item schema :
+root
+ |-- order_id: string (nullable = true)
+ |-- order_item_id: integer (nullable = true)
+ |-- product_id: string (nullable = true)
+ |-- seller_id: string (nullable = true)
+ |-- shipping_limit_date: timestamp (nullable = true)
+ |-- price: double (nullable = true)
+ |-- freight_value: double (nullable = true)
+
+
+Orders dataframe 99441 records
+
+Orders item dataframe 112650 records
+
+Total Revenue is : 13220248.930006918
+
+Monthly Revenue :
++----+-----+------------------+
+|year|month|     total_revenue|
++----+-----+------------------+
+|2017|    3| 335886.2099999962|
+|2017|    8| 535529.9299999961|
+|2017|   10| 657565.2699999996|
+|2018|   10|             275.4|
+|2016|   11|           9837.68|
+|2018|    1| 851118.1200000091|
+|2018|    3| 892100.1100000117|
+|2018|    8| 1141791.540000019|
+|2017|    7| 455000.9899999937|
+|2018|    5|1008601.5600000155|
+|2016|   10| 29874.43999999996|
+|2017|   12| 944992.9000000114|
+|2017|    9| 580268.3599999975|
+|2016|   12|            758.86|
+|2017|    4|268687.22999999847|
+|2018|    9|11469.039999999997|
+|2018|    7| 796428.8500000036|
+|2018|    6|1003232.4400000137|
+|2017|    2|198909.28999999992|
+|2017|   11| 651457.5199999993|
++----+-----+------------------+
+only showing top 20 rows
+
+
+Top 5 selling products
++--------------------------------+------------+
+|product_id                      |Total_orders|
++--------------------------------+------------+
+|aca2eb7d00ea1a7b8ebd4e68314663af|520         |
+|422879e10f46682990de24d770e7f83d|484         |
+|99a4788cb24856965c36a24e339b6058|477         |
+|389d119b48cf3043d311335e499d9c6b|390         |
+|368c6c730842d78016ad823897a372db|388         |
++--------------------------------+------------+
+only showing top 5 rows
+
+
+Average order value is : 119.97617980695232
+
+Uploaded result dataframe to HDFS
