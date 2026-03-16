@@ -1,0 +1,184 @@
+Creating a Crawler in AWS Glue
+---------------------------------------------------------------------------
+
+An AWS Glue Crawler scans data sources (commonly stored in Amazon S3),
+automatically detects the schema, and creates tables in the Glue Data Catalog.
+These tables can then be queried using Amazon Athena.
+
+This process allows serverless data analysis without manually defining
+table schemas.
+
+---------------------------------------------------------------------------
+Architecture Overview
+---------------------------------------------------------------------------
+
+Amazon S3 (Dataset Storage)
+        ↓
+AWS Glue Crawler
+        ↓
+Glue Data Catalog (Tables Created)
+        ↓
+Amazon Athena
+        ↓
+SQL Query & Data Analysis
+
+---------------------------------------------------------------------------
+Step 1 : Upload Dataset to Amazon S3
+---------------------------------------------------------------------------
+
+First upload the dataset to an S3 bucket, which will act as the
+data source for the crawler.
+
+Example S3 Path:
+s3://fraud-detection-data/raw/employee.csv
+
+Steps:
+1. Open AWS Management Console
+2. Go to Amazon S3
+3. Create a bucket 
+    Example : raw
+4. Upload the dataset file
+    Example : employee.csv
+
+---------------------------------------------------------------------------
+Step 2 : Create Glue Database
+---------------------------------------------------------------------------
+
+A Glue database is used to store metadata tables created by the crawler.
+
+Steps:
+1. Open AWS Console
+2. Go to AWS Glue
+3. Navigate to Data Catalog
+4. Select Databases
+5. Click on Add Database
+
+Fill the following details:
+Database Name : company
+Description   : Database for company Analytics datasets
+
+6. Click Create Database
+
+---------------------------------------------------------------------------
+Step 3 : Create AWS Glue Crawler
+---------------------------------------------------------------------------
+
+A crawler scans the dataset and automatically creates tables
+in the Glue Data Catalog.
+
+Steps:
+1. Open AWS Console
+2. Go to AWS Glue
+3. Navigate to Data Catalog
+4. Select Crawlers
+5. Click Create Crawler
+
+---------------------------------------------------------------------------
+3.1 Set Crawler Properties
+---------------------------------------------------------------------------
+
+Provide crawler details:
+
+Name        : employee_review
+Description : Crawler for employee datasets stored in S3
+
+Click Next
+
+---------------------------------------------------------------------------
+3.2 Choose Data Sources and Classifiers
+---------------------------------------------------------------------------
+
+1. Click Add a data source
+2. Select data source type: S3
+3. Provide dataset path
+
+Example:
+s3://fraud-detection-data/raw/
+
+4. Select "Crawl all sub-folders"
+5. Click Add S3 data source
+
+---------------------------------------------------------------------------
+3.3 Configure Security Settings
+---------------------------------------------------------------------------
+
+Select an IAM Role that allows Glue to access S3 and manage
+the Data Catalog.
+
+You can either:
+- Select an existing IAM role
+- Or create a new IAM role
+
+Recommended permissions:
+
+AmazonS3FullAccess
+AWSGlueConsoleFullAccess
+AWSGlueServiceNotebookRole
+AWSGlueServiceRole
+CloudWatchLogsFullAccess
+
+Optional Custom IAM Policy (PassRole Permission):
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::544755453179:role/GlueCrawlerToS3"
+    }
+  ]
+}
+
+---------------------------------------------------------------------------
+3.4 Set Output and Scheduling
+---------------------------------------------------------------------------
+
+Configure crawler output settings.
+
+Target Database  : company
+Table Name Prefix: employee_ (optional)
+Crawler Schedule : Run on demand
+
+---------------------------------------------------------------------------
+3.5 Review and Create
+---------------------------------------------------------------------------
+
+1. Review the crawler configuration
+2. Click Create Crawler
+
+---------------------------------------------------------------------------
+Step 4 : Run the Crawler
+---------------------------------------------------------------------------
+
+Steps:
+1. Select the crawler
+2. Click Run crawler
+
+The crawler will:
+
+- Scan the dataset
+- Detect the schema
+- Create tables in the Glue Data Catalog
+
+Example generated table:
+employee_raw
+
+---------------------------------------------------------------------------
+Step 5 : Query Data Using Amazon Athena
+---------------------------------------------------------------------------
+
+Once the crawler creates tables, the data can be queried using
+Amazon Athena.
+
+Steps:
+1. Open AWS Console
+2. Go to Amazon Athena
+3. Select the database: company
+4. Run SQL query
+
+Example Query:
+
+SELECT * 
+FROM company.employee_raw 
+WHERE salary > 2000
