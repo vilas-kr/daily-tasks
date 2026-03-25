@@ -1,0 +1,5 @@
+dotenv
+boto3
+faker
+fastapi
+uvicorn
